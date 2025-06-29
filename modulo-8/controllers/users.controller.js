@@ -1,5 +1,5 @@
 import * as UserModel from '../models/users.model.js';
-import { userSchema } from '../validators/user.validator.js';
+import { userSchema } from '../validators/user.validators.js';
 
 export async function listUsers(req, res) {
   const { page = 1, limit = 10, name = '' } = req.query;
